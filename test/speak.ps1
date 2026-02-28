@@ -22,7 +22,7 @@ $body = [ordered]@{ text = $Text; language = $Language }
 if ($Speaker -ne "") { $body["speaker"]  = $Speaker }
 if ($Instruct -ne "") { $body["instruct"] = $Instruct }
 
-# Write JSON to a temp file to avoid shell quoting issues (UTF-8 safe for curl -d @file)
+# Write JSON to temp file to avoid shell quoting issues (UTF-8 safe for curl -d @file)
 $bodyJson = $body | ConvertTo-Json -Compress
 $tmpJson = [System.IO.Path]::GetTempFileName()
 [System.IO.File]::WriteAllText($tmpJson, $bodyJson, [System.Text.Encoding]::UTF8)
@@ -30,8 +30,7 @@ $tmpJson = [System.IO.Path]::GetTempFileName()
 try {
     if ($n -ne "") {
         # Save mode: curl writes the WAV to a temp file (binary-safe via -o),
-        # then ffmpeg converts it.  Using & instead of cmd /c avoids shell
-        # quoting issues with the output path.
+        # then ffmpeg converts it.
         $tmpWav = [System.IO.Path]::ChangeExtension([System.IO.Path]::GetTempFileName(), ".wav")
         try {
             & curl.exe -sS -X POST $ApiUrl -H "Content-Type: application/json; charset=utf-8" -d "@$tmpJson" -o $tmpWav

@@ -1,0 +1,24 @@
+{
+  "voices": [
+    {
+      "instruct": "A distinguished authoritative narrator voice",
+      "voice_name": "qwen-tts-vd-voice_435dcffe-voice-20260228094920464-1253"
+    },
+    {
+      "instruct": "A distinguished authoritative narrator voice with warm measured baritone speak with gravitas of BBC documentary narrator keep steady unhurried pace at approximately 140 words per minute with deliberate pauses at sentence boundaries use gentle downward inflection maintain slight forward resonance when mentioning character names drop pitch for poisoned thought and abyss",
+      "voice_name": "qwen-tts-vd-voice_8ba93d43-voice-20260228095016805-cff9"
+    },
+    {
+      "instruct": "A deep powerful bass-baritone voice with tormented delivery speak as if throat is choked with sand and heart is imploding begin with resignation and measured devastation then build with growing intensity each farewell grows louder and more ragged the scream should be tortered and trembling let voice crack and shake use vocal tremor when mentioning Desdemona guttural quality as if each word is torn from chest",
+      "voice_name": "qwen-tts-vd-voice_b26f275e-voice-20260228095037563-1e0a"
+    },
+    {
+      "instruct": "A luminous ethereal soprano voice young and pure as morning speak with desperate sincerity shimmering emotion like sunlight on water begin with fervent declaration emphasize love the phrase my downright violence and storm of fortunes should build with slight defiant edge when you say I saw Othello visage drop to whisper the plea let me go with him is emotional heart break slightly on him speak with wonder for He is the sun to me and I the flower that turns to meet him use breathy quality",
+      "voice_name": "qwen-tts-vd-voice_f0df6dcc-voice-20260228095053256-9fb8"
+    },
+    {
+      "instruct": "A luminous ethereal soprano voice young and pure as morning speak with desperate sincerity shimmering emotion like sunlight on water begin with fervent declaration emphasize love",
+      "voice_name": "qwen-tts-vd-voice_3fb5fe1f-voice-20260228100057965-a17c"
+    }
+  ]
+}
